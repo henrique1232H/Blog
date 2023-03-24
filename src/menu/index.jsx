@@ -9,22 +9,41 @@ const Aside = styled.aside`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
 `
 
 const H1 = styled.h1`
     color: #fff;
 `
 
+const Ul = styled.ul`
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+`
+
+const A = styled.a`
+    color: #fff;
+    text-decoration: none;
+
+    :hover{
+        color: #fff
+    }
+    
+`
+
 export default function Menu() {
 
     return (
         <Aside>
-            <H1>Teste</H1>
+            <H1>Blog</H1>
 
             <nav>
-                <ul>
-                    <li><a href="#">teste</a></li>
-                </ul>
+                <Ul>
+                    <li><A href="#">teste</A></li>
+                    <li><A href="#">A</A></li>
+                </Ul>
             </nav>
         </Aside>
     )
