@@ -22,10 +22,8 @@ export default function CarouselA() {
 
     return (
         <Carousel fade>
-            <Carousel.Item>
-
+             <Carousel.Item>
                 <Img src={joji} />
-
 
                 <Carousel.Caption>
                     <h1>Teste</h1>
@@ -33,10 +31,13 @@ export default function CarouselA() {
             </Carousel.Item>
 
             <Carousel.Item>
-
                 <Img src={tyler} />
 
+                <Carousel.Caption>
+                    <h1>Teste</h1>
+                </Carousel.Caption>
             </Carousel.Item>
+
         </Carousel>
     )
 }
