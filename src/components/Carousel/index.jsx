@@ -4,6 +4,7 @@ import "./style.css";
 
 import joji from "../../assets/joji.jpg";
 import tyler from "../../assets/tyler_the_creator.jpg";
+import jcole from "../../assets/jCole.jpg"
 
 import styled from 'styled-components';
 
@@ -32,6 +33,15 @@ export default function CarouselA() {
 
             <Carousel.Item>
                 <Img src={tyler} />
+
+                <Carousel.Caption>
+                    <h1>Teste</h1>
+                </Carousel.Caption>
+            </Carousel.Item>
+
+
+            <Carousel.Item>
+                <Img src={jcole} />
 
                 <Carousel.Caption>
                     <h1>Teste</h1>

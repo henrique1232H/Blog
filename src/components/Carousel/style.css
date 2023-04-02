@@ -1,0 +1,13 @@
+.carousel-control-prev span {
+    background: url("../../assets/svg/arrow-circle-left.svg");
+}
+.carousel-control-next span {
+    background-image: url("../../assets/svg/arrow-circle-right.svg");
+}
+
+.carousel-control-prev span,
+.carousel-control-next span {
+    height: 15vh;
+    width: 30%;
+    background-repeat: no-repeat;
+}
