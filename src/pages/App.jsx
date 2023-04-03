@@ -6,7 +6,6 @@ export default function Index() {
 
   return (
     <div>
-      <Menu />
       <CarouselA />
     </div>
   )

@@ -1,13 +1,31 @@
+.joji {
+    background-image: url("../../assets/joji.jpg");
+}
+
+
+.tyler {
+    background-image: url("../../assets/tyler_the_creator.jpg");
+}
+
+.jcole {
+    background-image: url("../../assets/jCole.jpg");
+}
+
+
+.joji,
+.tyler,
+.jcole {
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    
+}
+
 .carousel-control-prev span {
     background: url("../../assets/svg/arrow-circle-left.svg");
+    background-size: cover;
 }
 .carousel-control-next span {
     background-image: url("../../assets/svg/arrow-circle-right.svg");
-}
-
-.carousel-control-prev span,
-.carousel-control-next span {
-    height: 15vh;
-    width: 30%;
-    background-repeat: no-repeat;
 }
