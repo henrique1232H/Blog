@@ -1,50 +1,74 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const Aside = styled.aside`
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-    background: rgba(0,0,0, 0.8);
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom-left-radius: 2%;
-    border-bottom-right-radius: 2%;
-`
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+`;
 
 const H1 = styled.h1`
-    color: #fff;
-`
+  color: #fff;
+  transition: 200ms all ease-in-out;
+
+  :hover {
+    letter-spacing: 0.5rem;
+  }
+`;
 
 const Ul = styled.ul`
-    display: flex;
-    gap: 3rem;
-    list-style: none;
-`
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+`;
 
 const A = styled.a`
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 
-    :hover{
-        color: #fff
-    }
-    
-`
+  :hover {
+    color: #fff;
+  }
+`;
+
+const Nav = styled.nav``;
+
+const Input = styled.input`
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  outline: none;
+
+  :focus {
+    outline: 1px solid red;
+  }
+`;
 
 export default function Menu() {
+  return (
+    <Aside>
+      <H1>Musica+</H1>
 
-    return (
-        <Aside>
-            <H1>Blog</H1>
+      <Input type="text" name="text" id="" placeholder="pesquise algo" />
 
-            <nav>
-                <Ul>
-                    <li><A href="#">teste</A></li>
-                    <li><A href="#">A</A></li>
-                </Ul>
-            </nav>
-        </Aside>
-    )
+      <Nav>
+        <Ul>
+          <li>
+            <A href="">Mais</A>
+          </li>
+
+          <li>
+            <A href="">Sobre</A>
+          </li>
+        </Ul>
+      </Nav>
+    </Aside>
+  );
 }
