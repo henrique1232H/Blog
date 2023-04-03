@@ -2,8 +2,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 import "./style.css";
 
-import tyler from "../../assets/tyler_the_creator.jpg";
-import jcole from "../../assets/jCole.jpg"
 
 import styled from 'styled-components';
 
