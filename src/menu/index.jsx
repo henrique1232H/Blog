@@ -45,9 +45,14 @@ const Input = styled.input`
   color: #fff;
   border: none;
   outline: none;
+  transition: 200ms all ease-in-out;
+
+  ::placeholder {
+    color: #fff;
+  }
 
   :focus {
-    outline: 1px solid red;
+    outline: 2px outset #f21919;
   }
 `;
 
@@ -56,7 +61,7 @@ export default function Menu() {
     <Aside>
       <H1>Musica+</H1>
 
-      <Input type="text" name="text" id="" placeholder="pesquise algo" />
+      <Input type="text" name="text" id="" placeholder="Pesquise algo..." />
 
       <Nav>
         <Ul>
