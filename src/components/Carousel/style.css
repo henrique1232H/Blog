@@ -25,7 +25,10 @@
 .carousel-control-prev span {
     background: url("../../assets/svg/arrow-circle-left.svg");
     background-size: cover;
+    background-position: center center;
 }
 .carousel-control-next span {
     background-image: url("../../assets/svg/arrow-circle-right.svg");
+    background-size: cover;
+    background-position: center center;
 }
