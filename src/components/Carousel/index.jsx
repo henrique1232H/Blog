@@ -28,7 +28,7 @@ const H1 = styled.h2`
 
 `
 
-export default function CarouselA() {
+export default function CarouselMain() {
 
     return (
         <Carousel fade>

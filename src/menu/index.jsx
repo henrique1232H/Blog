@@ -1,14 +1,13 @@
 import styled from "styled-components";
 
 const Aside = styled.aside`
-  position: fixed;
   z-index: 2;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 3rem;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.9);
   width: 100%;
 `;
 
@@ -52,7 +51,7 @@ const Input = styled.input`
   }
 
   :focus {
-    outline: 2px outset #f21919;
+    outline: 4px outset #f21919;
   }
 `;
 
