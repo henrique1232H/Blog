@@ -44,6 +44,14 @@ const CarouselBlock = styled.div`
 
 `
 
+const Text = styled.div`
+    display: inline;
+
+    :active {
+        display: none;
+    }
+`
+
 
 export default function Artist() {
 
@@ -68,9 +76,18 @@ export default function Artist() {
                                     </div>
 
                                     <h2>Joji</h2>
+
+                                    <Text>
+                                        <p>George Kusunoki Miller (ミラー・ジョージ・クスノキ?) (Osaka, 18 de setembro de 1992), conhecido como Joji, é um produtor de gravação japonês-australiano, cantor, compositor e ex-personalidade do YouTube.</p>
+
+                                        <p>Durante o seu período de atividade no YouTube entre 2008 e 2017, produziu principalmente conteúdos humorísticos absurdos. Ele também postou músicas e vídeos críticos. Um de seus vídeos foi a origem do meme Harlem Shake do cantor Baauer, que foi responsável pela estréia da canção no topo da Billboard Hot 100.</p>
+                                    </Text>
                             </CarouselBlock>
 
                             <CarouselBlock>
+                                <div className="">
+
+                                </div>
                                 <h2>5</h2>
                             </CarouselBlock>
 
