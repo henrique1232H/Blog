@@ -19,12 +19,14 @@ const Blur = styled.div`
     height: 100vh;
     background: rgba(0,0,0, 0.5);
     display: flex;
+    align-items: center;
     justify-content: center;
     align-items: flex-end;
-    padding-bottom: 5rem;
+    padding: 0 2rem 5rem 2rem;
 `
-const H1 = styled.h2`
+const P = styled.p`
     color: #fff;
+    font-size: clamp(0.4rem, 1vw + 1rem, 4rem);
 
 `
 
@@ -36,7 +38,7 @@ export default function CarouselMain() {
 
                 <div className='joji'>
                     <Blur>
-                        <H1>Como um artista que era um youtuber virou um dos maiores cantores da sua geração?</H1>
+                        <P>Como um artista que era um youtuber virou um dos maiores cantores da sua geração?</P>
                     </Blur>
                 </div>
             </Carousel.Item>
@@ -45,7 +47,7 @@ export default function CarouselMain() {
 
                 <div className='tyler'>
                     <Blur>
-                        <H1>aa</H1>
+                        <P>aa</P>
                     </Blur>
                 </div>
             </Carousel.Item>
@@ -55,7 +57,7 @@ export default function CarouselMain() {
 
                 <div className='jcole'>
                     <Blur>
-                        <H1>Teste</H1>
+                        <P>Teste</P>
                     </Blur>
                 </div>
 
