@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { FaSearch } from "react-icons/fa";
+import "./style.css"
 
 const Aside = styled.aside`
   z-index: 2;
@@ -58,21 +61,13 @@ const Input = styled.input`
 export default function Menu() {
   return (
     <Aside>
+
+      <GiHamburgerMenu color="#FFF" size={30} className="icon"/>
       <H1>Musica+</H1>
 
-      <Input type="text" name="text" id="" placeholder="Pesquise algo..." />
 
-      <Nav>
-        <Ul>
-          <li>
-            <A href="">Mais</A>
-          </li>
+      <FaSearch color="#FFF" size={30} className="icon"/>
 
-          <li>
-            <A href="">Sobre</A>
-          </li>
-        </Ul>
-      </Nav>
     </Aside>
   );
 }

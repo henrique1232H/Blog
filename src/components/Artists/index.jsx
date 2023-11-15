@@ -45,7 +45,8 @@ const CarouselBlock = styled.div`
 `
 
 const Text = styled.div`
-    display: inline;
+    display: flex;
+    scr
 
     :active {
         display: none;

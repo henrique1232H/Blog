@@ -15,7 +15,7 @@
 .joji,
 .tyler,
 .jcole {
-    height: 100vh;
+    max-height: 100vh;
     width: 100%;
     background-position: center center;
     background-size: cover;
