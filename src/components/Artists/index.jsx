@@ -1,24 +1,50 @@
-import { Carousel } from "react-bootstrap"
 import styled from "styled-components"
 import "./style.css"
 
 const Body = styled.section`
     height: auto;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background: linear-gradient(#171212, #000);
     color: #fff;
-    padding: 4rem;
+    padding: 2rem 2rem;
 `
-const Flex = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+const Grid = styled.div`
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+
+    @media (min-width: 700px) and (max-width:999px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1000px) and (max-width: 1550px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width:1600px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
 `
 
-const Title = styled.h1`
-    font-size: 2.5rem;
+const DivGrid = styled.div`
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    height: 30vh;
+    width: 100%;
+    border-radius: 1rem;
+    transition: 250ms all ease-in-out;
+    padding: 1rem 1.4rem;
+
+    :hover {
+        background: linear-gradient(black, #ff1c1cb6);
+        height: 40vh;
+    }
 `
+
 
 const CarouselDiv = styled.div`
     display: flex;
@@ -53,6 +79,12 @@ const Text = styled.div`
     }
 `
 
+const Title = styled.h3`
+    font-size: clamp(1.5rem, 2vw + 1rem, 4rem);
+    line-height: clamp(1rem, 2vw + 1rem, 3rem);
+
+`
+
 
 export default function Artist() {
 
@@ -62,62 +94,33 @@ export default function Artist() {
 
     return (
         <Body>
-            <Flex>
-                <Title>Sua principal fonte de informação de artista!</Title>
+            <h2>Seu principal blog de notícia</h2>
 
+            <Grid>
+                <DivGrid onClick={divClick}>
+                    <Title>teste</Title>
+                </DivGrid>
 
-                <Carousel className="CarouselAS">
-                    <Carousel.Item>
+                <DivGrid>
+                    <Title>teste</Title>
+                </DivGrid>
 
-                        <CarouselDiv>
+                <DivGrid>
+                    <Title>Teste</Title>
+                </DivGrid>
 
-                            <CarouselBlock className="Joji" onClick={divClick}>
-                                    <div className="backgroundJoji backgroundCard">
-                                        <div className="carouselBlockImg" />
-                                    </div>
+                <DivGrid>
+                    <Title>Teste</Title>
+                </DivGrid>
 
-                                    <h2>Joji</h2>
+                <DivGrid>
+                    <Title>Teste</Title>
+                </DivGrid>
 
-                                    <Text>
-                                        <p>George Kusunoki Miller (ミラー・ジョージ・クスノキ?) (Osaka, 18 de setembro de 1992), conhecido como Joji, é um produtor de gravação japonês-australiano, cantor, compositor e ex-personalidade do YouTube.</p>
-
-                                        <p>Durante o seu período de atividade no YouTube entre 2008 e 2017, produziu principalmente conteúdos humorísticos absurdos. Ele também postou músicas e vídeos críticos. Um de seus vídeos foi a origem do meme Harlem Shake do cantor Baauer, que foi responsável pela estréia da canção no topo da Billboard Hot 100.</p>
-                                    </Text>
-                            </CarouselBlock>
-
-                            <CarouselBlock>
-                                <div className="">
-
-                                </div>
-                                <h2>5</h2>
-                            </CarouselBlock>
-
-                            <CarouselBlock>
-                                <h2>te</h2>
-                            </CarouselBlock>
-
-                        </CarouselDiv>
-
-                    </Carousel.Item>
-
-                    <Carousel.Item>
-
-                        <CarouselDiv>
-                            <CarouselBlock>
-                                <h2>tr</h2>
-                            </CarouselBlock>
-
-                            <CarouselBlock>
-                                <h2>tet</h2>
-                            </CarouselBlock>
-
-                            <CarouselBlock>
-                                <h2>aa</h2>
-                            </CarouselBlock>
-                        </CarouselDiv>
-                    </Carousel.Item>
-                </Carousel>
-            </Flex>
+                <DivGrid>
+                    <Title>Teste</Title>
+                </DivGrid>
+            </Grid>
         </Body>
     )
 }

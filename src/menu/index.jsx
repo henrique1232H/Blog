@@ -9,18 +9,13 @@ const Aside = styled.aside`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 3rem;
+  padding: 1rem 2rem;
   background: rgba(0, 0, 0, 0.9);
   width: 100%;
 `;
 
 const H1 = styled.h1`
   color: #fff;
-  transition: 200ms all ease-in-out;
-
-  :hover {
-    letter-spacing: 0.5rem;
-  }
 `;
 
 const Ul = styled.ul`
@@ -38,7 +33,6 @@ const A = styled.a`
   }
 `;
 
-const Nav = styled.nav``;
 
 const Input = styled.input`
   padding: 1rem 2rem;
@@ -63,7 +57,7 @@ export default function Menu() {
     <Aside>
 
       <GiHamburgerMenu color="#FFF" size={30} className="icon"/>
-      <H1>Musica+</H1>
+      <H1><A href="#">Musica+</A></H1>
 
 
       <FaSearch color="#FFF" size={30} className="icon"/>
