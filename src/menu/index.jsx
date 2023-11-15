@@ -16,6 +16,7 @@ const Aside = styled.aside`
 
 const H1 = styled.h1`
   color: #fff;
+  padding-top: 0.5rem;
 `;
 
 const Ul = styled.ul`
