@@ -13,6 +13,12 @@ const Aside = styled.aside`
   padding: 1rem 2rem;
   background: rgba(0, 0, 0, 0.9);
   width: 100%;
+
+  @media (min-width:1000px) {
+    position: relative;
+    padding: 1rem 4rem;
+    height: 10vh;
+  }
 `;
 
 const H1 = styled.h1`
