@@ -9,6 +9,7 @@ const Aside = styled.aside`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
   padding: 1rem 2rem;
   background: rgba(0, 0, 0, 0.9);
   width: 100%;
