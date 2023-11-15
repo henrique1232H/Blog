@@ -46,38 +46,12 @@ const DivGrid = styled.div`
 `
 
 
-const CarouselDiv = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    cursor: pointer;
+const H2 = styled.h2`
+    display: block;
+    margin: 0 auto;
+    font-size: clamp(1rem, 2vw + 1rem, 4rem);
 `
 
-const CarouselBlock = styled.div`
-    height: 50vh;
-    width: 30%;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: 300ms all ease-in-out;
-
-    :hover {
-        height: 80vh;
-    }
-
-`
-
-const Text = styled.div`
-    display: flex;
-    scr
-
-    :active {
-        display: none;
-    }
-`
 
 const Title = styled.h3`
     font-size: clamp(1.5rem, 2vw + 1rem, 4rem);
@@ -88,16 +62,12 @@ const Title = styled.h3`
 
 export default function Artist() {
 
-    const divClick = () => {
-        window.prompt("hello")
-    }
-
     return (
         <Body>
-            <h2>Seu principal blog de notícia</h2>
+            <H2>Seu principal blog de notícia!</H2>
 
             <Grid>
-                <DivGrid onClick={divClick}>
+                <DivGrid>
                     <Title>teste</Title>
                 </DivGrid>
 
