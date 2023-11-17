@@ -18,7 +18,7 @@ const Grid = styled.div`
     gap: 1rem;
     margin-top: 1rem;
 
-    @media (min-width: 700px) and (max-width:999px) {
+    @media (min-width: 881px) and (max-width:999px) {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -46,11 +46,15 @@ const DivGrid = styled.div`
     :hover {
         background-color: #4158D0;
         background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-        height: 80vh;
+        height: auto;
+        
     }
 
-    @media (min-width: 200px) {
+    @media (max-width: 440px) {
         padding: 1rem 1.4rem;
+        min-width: 10%;
+        max-width: 100%;
+        height: 20vh;
     }
 `
 
@@ -69,8 +73,12 @@ const Title = styled.h3`
 `
 
 const ImgProfile = styled.img`
-    width: 10rem;
-    height: 10rem;
+    width: 100%;
+    min-width: 10%;
+    max-width: 40%;
+    height: 100%;
+    min-height: 2vh;
+    max-height: 20vh;
     border-radius: 1rem;
 `
 
@@ -78,6 +86,10 @@ const DivTitle = styled.div`
     display: flex;
     gap: 3rem;
     align-items: center;
+
+    @media (max-width:440px) {
+        gap: 0;
+    }
 `
 
 const DivTitleCenter = styled.div`
@@ -87,6 +99,9 @@ const DivTitleCenter = styled.div`
 `
 
 
+const P = styled.p`
+    font-size: clamp(1rem, 2vw + 1rem, 3rem);
+`
 
 export default function Artist() {
 
@@ -107,9 +122,9 @@ export default function Artist() {
                     </DivTitle>
                     
 
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid consequuntur repellat nesciunt tenetur iste dolorum ullam aperiam sunt quis culpa, quidem omnis numquam consectetur perspiciatis provident? Aut provident repellat est!</p>
+                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid consequuntur repellat nesciunt tenetur iste dolorum ullam aperiam sunt quis culpa, quidem omnis numquam consectetur perspiciatis provident? Aut provident repellat est!</P>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, in nobis? Corrupti alias asperiores, illum adipisci earum similique, voluptatibus possimus dolorem officiis non minus quasi explicabo aliquam placeat, impedit accusamus.</p>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, in nobis? Corrupti alias asperiores, illum adipisci earum similique, voluptatibus possimus dolorem officiis non minus quasi explicabo aliquam placeat, impedit accusamus.</P>
                 </DivGrid>
 
                 <DivGrid>
