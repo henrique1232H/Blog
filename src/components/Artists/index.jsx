@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import "./style.css"
+import joji from "../../assets/jojiProfile.jpg"
 
 const Body = styled.section`
     height: auto;
@@ -38,10 +39,18 @@ const DivGrid = styled.div`
     border-radius: 1rem;
     transition: 250ms all ease-in-out;
     padding: 1rem 1.4rem;
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
 
     :hover {
-        background: linear-gradient(black, #ff1c1cb6);
-        height: 40vh;
+        background-color: #4158D0;
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+        height: 80vh;
+    }
+
+    @media (min-width: 200px) {
+        padding: 1rem 1.4rem;
     }
 `
 
@@ -54,10 +63,29 @@ const H2 = styled.h2`
 
 
 const Title = styled.h3`
-    font-size: clamp(1.5rem, 2vw + 1rem, 4rem);
+    font-size: clamp(1.5rem, 1.5vw + 1rem, 4rem);
     line-height: clamp(1rem, 2vw + 1rem, 3rem);
 
 `
+
+const ImgProfile = styled.img`
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
+`
+
+const DivTitle = styled.div`
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+`
+
+const DivTitleCenter = styled.div`
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+`
+
 
 
 export default function Artist() {
@@ -67,8 +95,21 @@ export default function Artist() {
             <H2>Seu principal blog de notícia!</H2>
 
             <Grid>
-                <DivGrid>
-                    <Title>teste</Title>
+                <DivGrid className="div">
+
+                    <DivTitle className="divTitle">
+                        <ImgProfile src={joji} alt="" />
+
+                        <DivTitleCenter>
+                            <Title>JOJI</Title>
+                        </DivTitleCenter>
+                        
+                    </DivTitle>
+                    
+
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid consequuntur repellat nesciunt tenetur iste dolorum ullam aperiam sunt quis culpa, quidem omnis numquam consectetur perspiciatis provident? Aut provident repellat est!</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, in nobis? Corrupti alias asperiores, illum adipisci earum similique, voluptatibus possimus dolorem officiis non minus quasi explicabo aliquam placeat, impedit accusamus.</p>
                 </DivGrid>
 
                 <DivGrid>

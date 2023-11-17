@@ -1,38 +1,10 @@
-.CarouselAS {
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.div > p {
+    display: none;
+
 }
 
-.backgroundJoji {
-    background: url("../../assets/joji.jpg");
-    background-position: center center;
-    background-size: cover;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    height: 30vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.backgroundJoji div {
-    background-image: url("../../assets/jojiProfile.jpg");
-    background-position: center center;
-    background-size: cover;
-}
-
-.Joji {
-    background: linear-gradient(#242621,#fb0f23 );
-}
-
-
-.carouselBlockImg {
-    height: 22vh;
-    width: 40%;
-    border-radius: 100%;
-    background: #fff;
+.div:hover > p {
+    display: inline;
+    transition: 250ms all ease-in-out;
 }

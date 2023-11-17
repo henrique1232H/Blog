@@ -3,20 +3,8 @@ import Carousel from 'react-bootstrap/Carousel';
 import "./style.css";
 
 
-import styled from 'styled-components';
-
-const Img = styled.img`
-    height: 100vh;
-    width: 100%;
-
-    @media (max-width: 80rem ) {
-        width: 100%;
-        height: 40vh;
-    }
-`
-
 const Blur = styled.div`
-    height: 100vh;
+    height: 90vh;
     background: rgba(0,0,0, 0.5);
     display: flex;
     align-items: center;
