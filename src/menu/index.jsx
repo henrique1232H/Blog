@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaSearch } from "react-icons/fa";
-import "./style.css"
+import "./style.css";
+import { useState } from "react";
+
 
 const Aside = styled.aside`
   z-index: 2;
@@ -61,6 +63,10 @@ const Input = styled.input`
 `;
 
 export default function Menu() {
+
+  const [teste, useTeste] = useState()
+
+
   return (
     <Aside>
 

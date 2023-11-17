@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 import "./style.css";
+import styled from 'styled-components';
 
 
 const Blur = styled.div`
