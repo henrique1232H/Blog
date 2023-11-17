@@ -74,8 +74,8 @@ const Title = styled.h3`
 
 const ImgProfile = styled.img`
     width: 100%;
-    min-width: 10%;
-    max-width: 40%;
+    min-width: 5%;
+    max-width: 50%;
     height: 100%;
     min-height: 2vh;
     max-height: 20vh;
